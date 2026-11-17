@@ -1,0 +1,292 @@
+
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMW | Avtomabil bazasi</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/BMW.svg" alt="BMW">
+        </div>
+
+        <nav class="nav-links" id="navLinks">
+            <a href="#home">Asosiy sahifa</a>
+            <a href="#models">Modellar</a>
+            <a href="#configurator">O'zizga Mosini Tanlang</a>
+            <a href="#electric">Elektro mashina</a>
+            <a href="#contact">Bog'lanish</a>
+        </nav>
+
+        <div class="nav-right">
+            <a href="#configurator" class="nav-button">Odilbek Haqqoniy bo'lsin    </a>
+            <button class="menu-btn" id="menuBtn">☰</button>
+        </div>
+    </header>
+
+
+    <!-- HERO / CAROUSEL -->
+    <section class="hero" id="home">
+
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+            <p class="small-title">THE ULTIMATE DRIVING MACHINE</p>
+
+            <h1 id="heroTitle">BMW M4 Competition</h1>
+
+            <p id="heroDescription">
+                Experience the power of pure performance.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#configurator" class="btn-white">Explore Model</a>
+                <a href="#models" class="btn-outline">Discover More</a>
+            </div>
+        </div>
+
+        <div class="carousel-controls">
+            <button id="prevBtn">❮</button>
+            <div class="carousel-indicators" id="indicators"></div>
+            <button id="nextBtn">❯</button>
+        </div>
+
+        <div class="slide-number">
+            <span id="currentSlide">01</span> / 10
+        </div>
+
+    </section>
+
+
+    <!-- MODELS -->
+    <section class="models-section" id="models">
+
+        <div class="section-heading">
+            <p>EXPLORE THE RANGE</p>
+            <h2>Our BMW Models</h2>
+            <span>Find the BMW that matches your style.</span>
+        </div>
+
+        <div class="model-grid" id="modelGrid"></div>
+
+    </section>
+
+
+    <!-- CONFIGURATOR -->
+    <section class="configurator" id="configurator">
+
+        <div class="section-heading">
+            <p>MAKE IT YOURS</p>
+            <h2>Configure Your BMW</h2>
+            <span>Choose your model, color and discover its price.</span>
+        </div>
+
+        <div class="configurator-container">
+
+            <div class="car-preview">
+
+                <div class="preview-label">YOUR BMW</div>
+
+                <img id="configImage"
+                     src="https://images.unsplash.com/photo-1555215695-3004980ad54e?w=1200"
+                     alt="BMW Car">
+
+                <h2 id="configName">BMW M4 Competition</h2>
+
+                <p id="configSubtitle">High Performance Coupe</p>
+
+            </div>
+
+            <div class="config-options">
+
+                <h3>Select Your Model</h3>
+
+                <select id="modelSelect">
+                    <option value="0">BMW M4 Competition</option>
+                    <option value="1">BMW M3 Competition</option>
+                    <option value="2">BMW M5</option>
+                    <option value="3">BMW M8 Competition</option>
+                    <option value="4">BMW X5</option>
+                    <option value="5">BMW X6</option>
+                    <option value="6">BMW X7</option>
+                    <option value="7">BMW i4</option>
+                    <option value="8">BMW i7</option>
+                    <option value="9">BMW Z4</option>
+                </select>
+
+                <h3>Choose Exterior Color</h3>
+
+                <div class="color-options" id="colorOptions">
+
+                    <button class="color-circle active"
+                        style="--paint: #111111"
+                        data-color="Black"></button>
+
+                    <button class="color-circle"
+                        style="--paint: #e5e5e5"
+                        data-color="White"></button>
+
+                    <button class="color-circle"
+                        style="--paint: #c90020"
+                        data-color="Red"></button>
+
+                    <button class="color-circle"
+                        style="--paint: #163d79"
+                        data-color="Blue"></button>
+
+                    <button class="color-circle"
+                        style="--paint: #777777"
+                        data-color="Grey"></button>
+
+                </div>
+
+                <p class="selected-color">
+                    Selected Color: <strong id="colorName">Black</strong>
+                </p>
+
+                <div class="price-box">
+                    <p>Estimated Starting Price</p>
+                    <h2 id="carPrice">$78,000</h2>
+                    <span>Illustrative demo prices, not official BMW quotations.</span>
+                </div>
+
+                <button class="order-btn" id="orderBtn">
+                    Request Information
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ELECTRIC -->
+    <section class="electric-section" id="electric">
+
+        <div class="electric-content">
+            <p>THE FUTURE IS ELECTRIC</p>
+
+            <h2>BMW Electric</h2>
+
+            <span>
+                Discover a new era of driving with innovative electric mobility.
+            </span>
+
+            <a href="#models" class="btn-white">Explore Electric Models</a>
+        </div>
+
+    </section>
+
+
+    <!-- FEATURES -->
+    <section class="features">
+
+        <div class="section-heading">
+            <p>WHY BMW?</p>
+            <h2>Innovation Meets Performance</h2>
+        </div>
+
+        <div class="feature-grid">
+
+            <div class="feature-card">
+                <div class="feature-icon">⚡</div>
+                <h3>Performance</h3>
+                <p>Powerful engines and exceptional driving dynamics.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">✦</div>
+                <h3>Technology</h3>
+                <p>Modern technology and intelligent driving systems.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">◈</div>
+                <h3>Luxury</h3>
+                <p>Premium interiors and sophisticated design.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+    <section class="contact-section" id="contact">
+
+        <div class="section-heading">
+            <p>GET IN TOUCH</p>
+            <h2>Contact BMW</h2>
+            <span>Leave your information and we will get back to you.</span>
+        </div>
+
+        <form id="contactForm">
+
+            <input type="text" id="userName"
+                placeholder="Your full name" required>
+
+            <input type="email" id="userEmail"
+                placeholder="Your email address" required>
+
+            <textarea id="userMessage"
+                placeholder="Your message..." required></textarea>
+
+            <button type="submit" class="order-btn">
+                Send Message
+            </button>
+
+            <p id="formMessage"></p>
+
+        </form>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="footer-top">
+
+            <div class="footer-logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/BMW.svg"
+                    alt="BMW">
+                <h2>BMW</h2>
+            </div>
+
+            <div>
+                <h3>Explore</h3>
+                <a href="#home">Home</a>
+                <a href="#models">Models</a>
+                <a href="#configurator">Configurator</a>
+            </div>
+
+            <div>
+                <h3>Discover</h3>
+                <a href="#electric">Electric</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 BMW Clone Website. Educational Demo Project.</p>
+            <p>Not affiliated with BMW AG.</p>
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
